@@ -6,9 +6,7 @@ end
 
 
 function love.update(dt)
-  if love.keyboard.isDown("right") then
-    x = x + 100 * dt  
-  end
+
 end
 
 
