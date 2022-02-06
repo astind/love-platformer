@@ -4,19 +4,19 @@ function love.load()
   Sti = require 'libraries/sti'
   Object = require 'libraries/classic'
   Anim8 = require 'libraries/anim8'
-  Gamemap = Sti('maps/testmap.lua')
   require "classes/player"
-  Player = Player()
+  require "classes/game"
+  -- require "classes/camera"
+  game = Game()
 end
 
 
 function love.update(dt)
-  Player:update(dt)
+  game:update(dt)
 end
 
 
 function love.draw()
-  Gamemap:draw()
-  Player:draw()
+  game:draw()
 end
 
